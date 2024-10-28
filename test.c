@@ -222,22 +222,437 @@
 //     return 0;
 // }
 
+// 书麒
+//  int main()
+//  {
+//      int x, a, b, c, d;
+//      scanf("%d,&x");
+//      a = x / 100;
+//      b = x / 10 % 10;
+//      c = x % 10;
+//      d = a * a * a + b * b * b + c * c * c;
+//      while (x >= 100 && x <= 999)
+//      {
+//          if (x == d)
+//          {
+//              printf("%d is 水仙花数\n", x);
+//          }
+//          x++;
+//      }
+//  }
 
-//书麒
-// int main()
+// int main(int argc, char const *argv[])
 // {
-//     int x, a, b, c, d;
-//     scanf("%d,&x");
-//     a = x / 100;
-//     b = x / 10 % 10;
-//     c = x % 10;
-//     d = a * a * a + b * b * b + c * c * c;
-//     while (x >= 100 && x <= 999)
+//     //1-2+3-4+5...+99-100
+//     int i =1, sum = 0, f=1;
+//     while (i<=100)
 //     {
-//         if (x == d)
+//         sum = sum +i*f;
+//         i++;
+//         f=-f;
+//     }
+//     printf("sum=%d\n", sum);
+//     return 0;
+// }
+
+// int main(int argc, char const *argv[])
+// {
+//     int n=9;
+//     while(n>6) {
+//         n--;
+//         printf("%d",n);
+//     }
+//     return 0;
+// }
+
+// int main(int argc, char const *argv[])
+// {
+//     int x,y;
+//     for(int x=0, y=10;(y>0)&&(x<4); x++, y--) {
+//         printf("x=%d, y=%d\n",x,y);
+//     }
+//     return 0;
+// }
+
+// int main(int argc, char const *argv[])
+// {
+//     int a, i;
+//     a=0;
+//     for(i=1; i<5;i++) {
+//         switch (i)
 //         {
-//             printf("%d is 水仙花数\n", x);
+//         case 0:
+//         case 3: a+=2;
+//         case 1:
+//         case 2: a+=3;
+//         default: a+=5;
+//         }
+//         printf("%d\n",a);
+//     }
+//     return 0;
+// }
+
+// int main(int argc, char const *argv[])
+// {
+//     int i, j, x=0;
+//     for ( i = 0; i < 2; i++)
+//     {
+//         x++;
+//         for ( j = 0; j <=3; j++)
+//         {
+//             if (j%2) continue;
+//             x++;
 //         }
 //         x++;
 //     }
+//     printf("x=%d\n", x);
+//     return 0;
 // }
+
+// int main(int argc, char const *argv[])
+// {
+//     int y=9;
+//     for ( ; y>0; y--) {
+//         if (y%3==0)
+//         {
+//             printf("%d", --y);
+//         }
+
+//     }
+
+//     return 0;
+// }
+
+// int main(int argc, char const *argv[])
+// {
+//     int i = 0;
+//     for (i = 0; i <= 40; i++)
+//     {
+//         if (i++ % 5 == 0)
+//             if (++i % 8 == 0)
+//                 printf("%d", i);
+//     }
+//     printf("\n");
+//     return 0;
+// }
+
+// int main(int argc, char const *argv[])
+// {
+//     int k = 5;
+//     while (--k)
+//         printf("%d", k -= 3);
+//     printf("\n");
+//     return 0;
+// }
+
+// int main(int argc, char const *argv[])
+// {
+
+//     int i = 5;
+//     do
+//     {
+//         if (i % 3 == 1)
+//             if (i % 5 == 2)
+//             {
+//                 printf("%d", i);
+//                 break;
+//             }
+//     } while (i != 0);
+//     printf("\n");
+//     return 0;
+// }
+
+// 8 17
+// int main(int argc, char const *argv[])
+// {
+//     int i = 1, s = 3;
+//     do
+//     {
+//         s += i++;
+//         if (s % 7 == 0)
+//         {
+//             continue;
+//         }
+//         else
+//             ++i;
+
+//     } while (s < 15);
+//     printf("%d", i);
+//     return 0;
+// }
+
+// 2 5 8 11 14
+// int main(int argc, char const *argv[])
+// {
+//     int i = 1;
+//     while (i <= 15)
+//         if (++i % 3 != 2)
+//             continue;
+//         else
+//             printf("%d,", i);
+//     printf("\n");
+//     return 0;
+// }
+
+// 学生成绩，统计并输出最高和最低成绩，当输入负数时结束循环
+// int main(int argc, char const *argv[])
+// {
+//     float x, max, min, aver, sum = 0.0;
+//     int n = 0;
+//     scanf("%f", &x);
+//     max = x;
+//     min = x;
+//     while (x >= 0)
+//     {
+//         if (x > max)
+//             max = x;
+//         if (x < min)
+//             min = x;
+//         sum = ;
+//         n++;
+//         scanf("%f", &x); // ?
+//     }
+//     aver = ;
+//     printf("\nmax=%f\nmin=%f\naverager=%f\n", max, min, aver);
+//     return 0;
+// }
+
+// 求1-1/2+1/3-1/4+1/5-1/6+1/7……
+// int main(int argc, char const *argv[])
+// {
+//     float sum = 0;
+//     int i = 1, f = 1;
+//     for (i = 1; i < 8; i++)
+//     {
+//         sum += f * (1.0 / i);
+//         f = -f;
+//         // i++;
+//         // printf("%d\n", x);
+//     }
+//     printf("%f", sum);
+
+//     return 0;
+// }
+
+// int main(int argc, char const *argv[])
+// {
+//     int i, n, m = -1;
+//     double j, sum = 0.0, k = 0.0;
+//     scanf("%d", &n);
+//     for (i = 1; i <= n; i++)
+//     {
+//         m = -m;
+//         j = m / (k + 1);
+//         sum = sum + j;
+//         k++;
+//     }
+//     printf("%4f\n", sum);
+//     return 0;
+// }
+
+// 计算1-2/3+3/5-4/7+……的前n项和
+// int main(int argc, char const *argv[])
+// {
+//     int i, n;
+//     float sum = 0, flag = 1, k = 1.0;;
+//     scanf("%d", &n);
+//     for (i = 1; i <= n; i++)
+//     {
+//         sum = sum + flag * (k / (2 * i - 1));
+//         flag = -flag;
+//     }
+//     printf("%f", sum);
+//     return 0;
+// }
+
+// int main(int argc, char const *argv[])
+// {
+//     int n, i;
+//     double s = 1;
+//     scanf("%d", &n);
+//     for ( i = 1; i <= n; i++)
+//     {
+//         s *= i;
+//     }
+//     printf("s=%4lf\n", s);
+//     return 0;
+// }
+
+// int main(int argc, char const *argv[])
+// {
+//     int n = 5;
+//     do
+//     {
+//         switch (n % 2)
+//         {
+//         case 0:
+//             n--;
+//             break;
+//         case 1:
+//             n--;
+//             continue;
+//         }
+//         n--;
+//         printf("%2d", n);
+//     } while (n > 0);
+
+//     return 0;
+// }
+
+// int main(int argc, char const *argv[])
+// {
+//     int i, j, m = 55;
+//     for (i = 1; i <= 3; i++)
+//         for (j = 3; j <= i; j++)
+//             m = m % j;
+//     printf("%d\n", m);
+//     return 0;
+// }
+
+// int main(int argc, char const *argv[])
+// {
+//     int i, j, n = 0;
+//     for (i = 0; i < 2; i++)
+//     {
+//         n++;
+//         for (j = 0; j <= 3; j++)
+//         {
+//             if (j % 2)
+//                 continue;
+//             n++;
+//         }
+//         n++;
+//     }
+//     printf("n=%d\n", n);
+//     return 0;
+// }
+
+// 5
+// int main(int argc, char const *argv[])
+// {
+//     int a = 5;
+//     do
+//     {
+//         printf("%2d\n", a--);
+//     } while (!a);
+
+//     return 0;
+// }
+
+// int main(int argc, char const *argv[])
+// {
+//     int x;
+//     for (x = 3; x < 6; x++)
+//         printf((x % 2) ? "**%d" : "##%d\n", x);
+//     return 0;
+// }
+
+// int main(int argc, char const *argv[])
+// {
+//     int i, j;
+//     for (i = 1; i <= 4; i++)
+//     {
+//         for (j = 1; j <= i; j++)
+//         {
+//             printf("*");
+//         }
+//         printf("\n");
+//     }
+
+//     return 0;
+// }
+
+// int main(int argc, char const *argv[])
+// {
+//     int i, j, k, n;
+//     scanf("%d", &n);
+//     for (i = 1; i <= n; i++)
+//     {
+//         for ( k = 1; k < i; k++)
+//         {
+//             printf(" ");
+//         }
+
+//         for (j = n; j >= i; j--)
+//         {
+//             printf("*");
+//         }
+//         printf("\n");
+//     }
+
+//     return 0;
+// }
+
+// int main(int argc, char const *argv[])
+// {
+//     int i, j, k, n;
+//     // scanf("%d", &n);
+//     for (i = 4; i >= 1; i--)
+//     {
+//         for (k = 4 - i; k > 0; k--)
+//         {
+//             printf(" ");
+//         }
+
+//         for (j = 1; j <= i; j++)
+//         {
+//             printf("*");
+//         }
+//         printf("\n");
+//     }
+
+//     return 0;
+// }
+
+// int main(int argc, char const *argv[])
+// {
+//     int i, j, k, n;
+//     scanf("%d", &n);
+//     for (i = 1; i <= n; i++)
+//     {
+//         for (j = n - i; j > 0; j--)
+//         {
+//             printf(" ");
+//         }
+//         for (k = 1; k <= 2 * i - 1; k++)
+//         {
+//             printf("*");
+//         }
+//         printf("\n");
+//     }
+
+//     return 0;
+// }
+
+// int main(int argc, char const *argv[])
+// {
+//     float x = 234.5678, y;
+//     y = (int)(x * 100 + 0.5);
+//     printf("%.2f", y/100);
+//     return 0;
+// }
+
+// 求1!+2!+3!+……+n!
+int allin(int x)
+{
+    int j, s = 1;
+    for (j = 1; j <= x; j++)
+    {
+        s *= j;
+    }
+    return s;
+}
+int main(int argc, char const *argv[])
+{
+    int i, n;
+    double sum = 0;
+    scanf("%d", &n);
+    for (i = 1; i <= n; i++)
+    {
+        // allin(i);
+        sum = sum + allin(i);
+    }
+    printf("sum=%lf\n", sum);
+
+    return 0;
+}
