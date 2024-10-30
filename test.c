@@ -633,26 +633,34 @@
 // }
 
 // 求1!+2!+3!+……+n!
-int allin(int x)
-{
-    int j, s = 1;
-    for (j = 1; j <= x; j++)
-    {
-        s *= j;
-    }
-    return s;
-}
-int main(int argc, char const *argv[])
-{
-    int i, n;
-    double sum = 0;
-    scanf("%d", &n);
-    for (i = 1; i <= n; i++)
-    {
-        // allin(i);
-        sum = sum + allin(i);
-    }
-    printf("sum=%lf\n", sum);
+// int allin(int x)
+// {
+//     int j, s = 1;
+//     for (j = 1; j <= x; j++)
+//     {
+//         s *= j;
+//     }
+//     return s;
+// }
+// int main(int argc, char const *argv[])
+// {
+//     int i, n;
+//     double sum = 0;
+//     scanf("%d", &n);
+//     for (i = 1; i <= n; i++)
+//     {
+//         // allin(i);
+//         sum = sum + allin(i);
+//     }
+//     printf("sum=%lf\n", sum);
 
-    return 0;
-}
+//     return 0;
+// }
+
+// int main(int argc, char const *argv[])
+// {
+//     int x = 123;
+//     printf("%x", x);
+//     return 0;
+// }
+
