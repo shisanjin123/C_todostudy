@@ -664,3 +664,118 @@
 //     return 0;
 // }
 
+// double Fun1(double x)
+// {
+//     double a, b;
+//     if (a < 1)
+//         b = a;
+//     else if (a >= 1 && a < 10)
+//         b = 2 * a - 1;
+//     else
+//         b = 2 * a - 11;
+
+//     return b;
+// }
+
+// double main(int argc, char const *argv[])
+// {
+//     double x, y;
+//     scanf("%lf", &x);
+//     y = Fun1(x);
+//     printf("%lf", y);
+//     return 0;
+// }
+
+// double Fun1(double x) {
+//     if(x<1) return x;
+//     if(x>=1 && x<10) return 2 * x - 1;
+//     if(x>=10) return 2 * x - 11;
+// }
+// int main(int argc, char const *argv[])
+// {
+//     double x, res;
+//     scanf("%d", &x);
+//     res = Fun1(x);
+//     printf("%f\n", res);
+//     return 0;
+// }
+
+// int main() {
+//     int n, max, min;
+//     float sum = 0.0, average;
+//     int count = 10;
+
+//     printf("请输入十个数：\n");
+
+//     // 输入第一个数
+//     scanf("%d", &n);
+//     max = min = n;  // 初始化最大值和最小值
+
+//     // 输入剩下的九个数
+//     for (int i = 1; i < count; i++) {
+//         scanf("%d", &n);
+//         if (n > max) {
+//             max = n;  // 更新最大值
+//         }
+//         if (n < min) {
+//             min = n;  // 更新最小值
+//         }
+//         sum += n;    // 累加总和
+//     }
+
+//     sum += min;  // 加上第一个数
+
+//     average = sum / count;
+
+//     printf("最大值: %d\n", max);
+//     printf("最小值: %d\n", min);
+//     printf("平均值: %.2f\n", average);
+
+//     return 0;
+// }
+
+// float jiec(int x)
+// {
+//     int i;
+//     float s = 1;
+//     for (i = 0; i <= x; i++)
+//     {
+//         s = s * i;
+//     }
+//     return 1 / s;
+// }
+
+// int main(int argc, char const *argv[])
+// {
+//     int n, j;
+//     float sum = 0.0;
+//     scanf("%d", &n);
+//     for(j = 1; j <= n; j++)
+//         sum = sum + jiec(j);
+//         printf("sum=%f\n", sum);
+//     return 0;
+// }
+
+// // 200~300, 末位数字是6，又能被3整除的数，符合条件的数输出
+// int main(int argc, char const *argv[])
+// {
+//     int i;
+//     for (i = 200; i <= 300; i++)
+//     {
+//         if (i % 10 == 6 && i % 3 == 0)
+//         {
+//             printf("%d", i);
+//         }
+//     }
+
+//     return 0;
+// }
+
+// int main(int argc, char const *argv[])
+// {
+//     int a, b;
+//     printf("%d", (a=5,b=2,a>b?a++:b++,a+b));    
+//     return 0;
+// }
+
+
